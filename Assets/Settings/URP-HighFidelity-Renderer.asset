@@ -1,5 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6717412418629152454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3846890b264b88b1b8458ff7155b64, type: 3}
+  m_Name: DualKawaseBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 2fbeeb597dfa45b9884eca4e6aaee771, type: 3}
+  m_Settings:
+    blurRadius: 1
+    blurIterations: 3
+    RTDownScale: 1
+--- !u!114 &-6038630274728446641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bf2382594942438660383ca6d82805, type: 3}
+  m_Name: KawaseBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 8e3eefc8e7134d008bb06826ebc56a3d, type: 3}
+  m_Settings:
+    blurRadius: 1
+    blurIterations: 6
+    RTDownScale: 0
 --- !u!114 &-620470105792991355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,7 +75,10 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: -620470105792991355}
-  m_RendererFeatureMap: 85af75e6b9a563f7
+  - {fileID: 7592715181503058806}
+  - {fileID: -6038630274728446641}
+  - {fileID: -6717412418629152454}
+  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a2
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -86,3 +127,22 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &7592715181503058806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001e4b1404cf44c08bc3fa20d30fd092, type: 3}
+  m_Name: BoxBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: c8691c83020a4af8aba8ff8e5a6c15fc, type: 3}
+  m_BoxBlurSettings:
+    blurRadius: 3
+    blurIterations: 6
+    RTDownScale: 0
