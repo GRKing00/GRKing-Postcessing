@@ -19,6 +19,28 @@ MonoBehaviour:
     blurRadius: 1
     blurIterations: 3
     RTDownScale: 1
+--- !u!114 &-6659433185265834302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a39bfce86604e2e8068539f0bd10379, type: 3}
+  m_Name: TiltShiftBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 5fe66b0e607c5064bba60f18e59c5e65, type: 3}
+  m_Settings:
+    blurRadius: 3
+    blurIterations: 100
+    RTDownScale: 0
+    centerOffset: 0
+    blurRange: 2
+    power: 3
 --- !u!114 &-6038630274728446641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +101,9 @@ MonoBehaviour:
   - {fileID: -6038630274728446641}
   - {fileID: -6717412418629152454}
   - {fileID: 5220780940013404462}
-  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348
+  - {fileID: -6659433185265834302}
+  - {fileID: 1814570365180238783}
+  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e19
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -128,6 +152,29 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &1814570365180238783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdbaa65f2f04622bad986642c6a1b83, type: 3}
+  m_Name: IrisBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 1f80d8b18bec21c409ff0429d2965fd5, type: 3}
+  m_Settings:
+    blurRadius: 3
+    blurIterations: 100
+    RTDownScale: 0
+    centerOffsetX: 0
+    centerOffsetY: 0
+    blurRange: 2
+    power: 3
 --- !u!114 &5220780940013404462
 MonoBehaviour:
   m_ObjectHideFlags: 0
