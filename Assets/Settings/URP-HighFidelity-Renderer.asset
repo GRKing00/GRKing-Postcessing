@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cdbaa65f2f04622bad986642c6a1b83, type: 3}
   m_Name: IrisBlurRendererFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_Event: 600
   m_Shader: {fileID: 4800000, guid: 1f80d8b18bec21c409ff0429d2965fd5, type: 3}
   m_Settings:
