@@ -41,6 +41,25 @@ MonoBehaviour:
     centerOffset: 0
     blurRange: 2
     power: 3
+--- !u!114 &-6190840164160571598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe628c9823e849a0967626592104c000, type: 3}
+  m_Name: RadialBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: a636bccf6f6034249b7a96ebc120ce03, type: 3}
+  m_Settings:
+    blurRadius: 0.543
+    blurIterations: 40
+    RTDownScale: 0
 --- !u!114 &-6038630274728446641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +79,43 @@ MonoBehaviour:
     blurRadius: 1
     blurIterations: 6
     RTDownScale: 0
+--- !u!114 &-1410317862460375205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88bb4a4ba5d245f0a08f79f504a17a48, type: 3}
+  m_Name: GrainyBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: a03430b11124e614094c52a168e6b469, type: 3}
+  m_Settings:
+    blurRadius: 1
+    blurIterations: 6
+    RTDownScale: 0
+--- !u!114 &-876170620390290557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56225c2f603641ae9c8d418c416d3860, type: 3}
+  m_Name: RGBSplitGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: f3f464cbe9cea9e4d9bef0ae4a5caa3b, type: 3}
+  m_settings:
+    amplitude: 5
+    distance: 1
 --- !u!114 &-620470105792991355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +159,13 @@ MonoBehaviour:
   - {fileID: 5220780940013404462}
   - {fileID: -6659433185265834302}
   - {fileID: 1814570365180238783}
-  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e19
+  - {fileID: -1410317862460375205}
+  - {fileID: -6190840164160571598}
+  - {fileID: 6706234551752730872}
+  - {fileID: -876170620390290557}
+  - {fileID: 617406882505365833}
+  - {fileID: 3541747764786191256}
+  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e195b3fa953608b6dec32f7fcd1abb715aaf828ac2dcb54115d83cb00817637d7f349199dd949789108985b1dbcd3d02631
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -152,6 +214,31 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &617406882505365833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8299ac1d038745979845ec6f42e2ba12, type: 3}
+  m_Name: ImageBlockGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 8d3053591825ed143821c6babc1ed5c7, type: 3}
+  m_settings:
+    offset: 1.45
+    speed: 10
+    RGBSplitIntensity: 1.4
+    layer1Power: 5
+    layer2Power: 4
+    layer1TilingX: 5.7
+    layer1TilingY: 10.3
+    layer2TilingX: 6.5
+    layer2TilingY: 11.3
 --- !u!114 &1814570365180238783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +262,27 @@ MonoBehaviour:
     centerOffsetY: 0
     blurRange: 2
     power: 3
+--- !u!114 &3541747764786191256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f324460065ecab443a75e105ced12de9, type: 3}
+  m_Name: LineBlockGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: f8546ddb827c14f44b1478ad8f3b7682, type: 3}
+  m_settings:
+    speed: 1
+    linesWidth: 3
+    amount: 0.604
+    offset: 0.4
+    alpha: 1
 --- !u!114 &5220780940013404462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +302,26 @@ MonoBehaviour:
     blurRadius: 3
     blurIterations: 100
     RTDownScale: 0
+--- !u!114 &6706234551752730872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d42b6511fb4b2f84ec8b4ad3936c7e, type: 3}
+  m_Name: DirectionalBlurRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 4510226690b423048a9303ddc9ad32ba, type: 3}
+  m_Settings:
+    blurRadius: 1.405
+    blurIterations: 40
+    RTDownScale: 0
+    angle: 0.97
 --- !u!114 &7592715181503058806
 MonoBehaviour:
   m_ObjectHideFlags: 0
