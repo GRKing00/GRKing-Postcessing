@@ -79,6 +79,44 @@ MonoBehaviour:
     blurRadius: 1
     blurIterations: 6
     RTDownScale: 0
+--- !u!114 &-3937168772030958114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ef4a0fa56efd94cacae9770a669f4a, type: 3}
+  m_Name: ScanLineGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 1f016df32bacc3543b9db856faa1a63e, type: 3}
+  m_settings:
+    scanLineJitterX: 0.485
+    scanLineJitterY: 0.113
+--- !u!114 &-3403938762037732098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5636f201851c98f4a949c0dfa4e376b7, type: 3}
+  m_Name: TileJitterGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: aa040b802d9463e4da3fe87c73fa5ebd, type: 3}
+  m_settings:
+    frequency: 40
+    splitNumber: 8
+    jitterSpeed: 15
+    jitterAmount: 300
 --- !u!114 &-1410317862460375205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +203,9 @@ MonoBehaviour:
   - {fileID: -876170620390290557}
   - {fileID: 617406882505365833}
   - {fileID: 3541747764786191256}
-  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e195b3fa953608b6dec32f7fcd1abb715aaf828ac2dcb54115d83cb00817637d7f349199dd949789108985b1dbcd3d02631
+  - {fileID: -3403938762037732098}
+  - {fileID: -3937168772030958114}
+  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e195b3fa953608b6dec32f7fcd1abb715aaf828ac2dcb54115d83cb00817637d7f349199dd949789108985b1dbcd3d02631fedc8e13bbc7c2d0de7555a2dc5d5cc9
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
