@@ -205,7 +205,11 @@ MonoBehaviour:
   - {fileID: 3541747764786191256}
   - {fileID: -3403938762037732098}
   - {fileID: -3937168772030958114}
-  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e195b3fa953608b6dec32f7fcd1abb715aaf828ac2dcb54115d83cb00817637d7f349199dd949789108985b1dbcd3d02631fedc8e13bbc7c2d0de7555a2dc5d5cc9
+  - {fileID: 5783600725216795476}
+  - {fileID: 1236354481818969919}
+  - {fileID: 8062138642745349474}
+  - {fileID: 5729303624629527144}
+  m_RendererFeatureMap: 85af75e6b9a563f7769334ca3abe5e694f35e458c27932ac3ad1cfe1fef4c6a22e01a1a39af07348c226c81acdf094a3bfdb841422a62e195b3fa953608b6dec32f7fcd1abb715aaf828ac2dcb54115d83cb00817637d7f349199dd949789108985b1dbcd3d02631fedc8e13bbc7c2d0de7555a2dc5d5cc9541b3d7d377a43503f2748c9d96928116255c96a6178e26f68a2669c4a93824f
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -279,6 +283,25 @@ MonoBehaviour:
     layer1TilingY: 10.3
     layer2TilingX: 6.5
     layer2TilingY: 11.3
+--- !u!114 &1236354481818969919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7036149e014cab84380ed9096a565945, type: 3}
+  m_Name: AnalogNoiseGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 169d39f44d76c1b42b5e53a1c03efb81, type: 3}
+  m_settings:
+    speed: 0.163
+    fading: 1
+    luminanceJitterThreshold: 0.755
 --- !u!114 &1814570365180238783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +365,47 @@ MonoBehaviour:
     blurRadius: 3
     blurIterations: 100
     RTDownScale: 0
+--- !u!114 &5729303624629527144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332599144919e2e4fbb7355b6b670b72, type: 3}
+  m_Name: ScreenShakeGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 295c706827fc1e44f9001161360e9f10, type: 3}
+  m_settings:
+    shakeSpeed: 15
+    shakeIntensity: 0.3
+--- !u!114 &5783600725216795476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd240a32e81f27241a13202c9830628f, type: 3}
+  m_Name: DigitalStripeGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 7b6b6f07dc8dee54ca9df0f9de6fc217, type: 3}
+  m_settings:
+    noiseTextureWidth: 20
+    noiseTextureHeight: 20
+    updateInterval: 0.156
+    stripLength: 0.745
+    stripColorAdjustIndensity: 0.798
+    intensity: 0.124
+    stripColorAdjustColor: {r: 0.32635722, g: 0.06820219, b: 0.3509434, a: 0}
 --- !u!114 &6706234551752730872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,3 +445,21 @@ MonoBehaviour:
     blurRadius: 3
     blurIterations: 6
     RTDownScale: 0
+--- !u!114 &8062138642745349474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f75e5c98a921e47863533d7c4d1556, type: 3}
+  m_Name: ScreenJumpGlitchRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Event: 600
+  m_Shader: {fileID: 4800000, guid: 76acb90948032bc4baaa751bdcd2782a, type: 3}
+  m_settings:
+    jumpSpeed: 2.94
+    jumpIndensity: 0.83
